@@ -1,0 +1,70 @@
+@media (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+
+  .apparel {
+    flex-direction: column;
+
+    &__left {
+      &__text {
+        margin-top: 30px;
+
+        img {
+          margin-left: 30px;
+          width: 110px;
+        }
+        h1 {
+          margin: 50px 30px 0;
+          font-size: 35px;
+          text-align: center;
+        }
+
+        p {
+          margin: 15px 30px 0;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+
+    &__hero {
+      background: url(../images/hero-mobile.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 220px;
+      margin-top: 22px;
+    }
+
+    &__right {
+      display: none;
+    }
+
+    .apparel__form {
+      margin-top: 25px;
+
+      &__content {
+        margin: 0 30px;
+
+        & input:first-child {
+          padding: 14px 0 14px 0;
+
+          &::placeholder {
+            padding: 25px;
+            font-size: 14px;
+          }
+        }
+
+        div {
+          width: 62px;
+
+          .error {
+            width: 22px;
+            right: 70px;
+          }
+        }
+      }
+    }
+  }
+}

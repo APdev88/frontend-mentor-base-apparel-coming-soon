@@ -1,0 +1,138 @@
+@import "config";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../images/bg-pattern-desktop.svg);
+
+  height: 100vh;
+  overflow: hidden;
+  color: $desatured-red;
+}
+
+.apparel {
+  display: flex;
+
+  &__left {
+    flex: 2;
+
+    &__text {
+      margin: 70px auto;
+      max-width: 445px;
+
+      h1 {
+        font-size: 62px;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        margin-top: 100px;
+        color: $dark-red;
+
+        span {
+          font-weight: 300;
+          color: $desatured-red;
+        }
+      }
+
+      p {
+        margin-top: 30px;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .apparel__form {
+    position: relative;
+    height: 85px;
+    margin-top: 40px;
+
+    &__content {
+      position: relative;
+
+      input {
+        width: 100%;
+        padding: 18px 0 18px 30px;
+        border-radius: 30px;
+        background: transparent;
+        border: 1px solid $desatured-red;
+        font-family: inherit;
+        font-size: 16px;
+        outline: none;
+
+        &.active {
+          border: 1px solid red;
+        }
+
+        &:active {
+          border: 1px solid $desatured-red;
+        }
+
+        &::placeholder {
+          color: $desatured-red;
+          opacity: 0.5;
+          font-size: 15px;
+        }
+      }
+
+      div {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 30px;
+        width: 100px;
+        height: 100%;
+        background-color: black;
+        background: linear-gradient(135deg, rgba(248, 191, 191, 1) 0%, rgba(238, 140, 140, 1) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+          cursor: pointer;
+          background: url("../images/icon-arrow.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+
+          &:active {
+            transform: scale(0.9);
+            border: none;
+          }
+        }
+
+        .error {
+          position: absolute;
+          right: 110px;
+          display: none;
+
+          &.active {
+            display: block;
+          }
+        }
+      }
+    }
+
+    p {
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+      font-size: 14px;
+      color: $soft-red;
+    }
+
+    .error__text {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+@import "mobile";
