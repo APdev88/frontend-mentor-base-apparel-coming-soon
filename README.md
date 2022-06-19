@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Click Here!](https://github.com/APdev88/frontend-mentor-base-apparel-coming-soon)
+- Live Site URL: [Click Here!](https://base-apparel-coming-soon-master-ap.netlify.app/)
 
 ## My process
 
