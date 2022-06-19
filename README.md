@@ -38,7 +38,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ### Useful resources
